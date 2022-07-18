@@ -1,0 +1,79 @@
+
+.searchBtn{
+   padding: 0 20px;
+    cursor: pointer;
+    border: 1px solid #dedede;
+    background-color: transparent;
+    outline: none;
+    transition: 300ms all;
+}
+.searchBtn:hover{
+    background-color: #fff;
+}
+#myContainer{
+width: 200px;
+    height: 200px;
+    border: 1px solid #dedede;
+}
+#myTitle{
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+#myUl{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.extension-popup{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.alertText{
+    padding: 6px 10px;
+    background-color: red;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+#my-social-media{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: auto;
+}
+#my-social-media li{
+    list-style-type: none;
+}
+#my-social-media li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#my-social-media  li img{
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    object-position: center;
+    transition: 200ms all;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#my-social-media a{
+    display: block;
+    font-size: 12px;
+    text-decoration: none;
+    color: #000000;
+}
+#my-social-media  li:hover img{
+    transform: scale(0.9);
+}

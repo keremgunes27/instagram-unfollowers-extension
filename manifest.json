@@ -1,0 +1,23 @@
+{
+
+  "name": "İnstagram unfollowers extension",
+  "version": "0.1.0",
+
+  "manifest_version": 3,
+  "author": "kerem Gunes <guneskerem42@gmail.com>",
+
+  "description": "You can find instagram unfollowers without using any api",
+  "icons": {"128": "img/128x128.png"},
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "img/19x19.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.instagram.com/*"],
+      "js": ["back-app.js"],
+      "css": ["style.css"]
+    }
+    ],
+  "permissions": ["tabs", "storage", "contextMenus"]
+}
